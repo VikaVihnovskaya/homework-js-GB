@@ -9,3 +9,16 @@ const tempCels = 22;
 const tempFahr = (9 / 5) * tempCels + 32;
 console.log(`Температура по Цельсию: ${tempCels}`);
 console.log(`Температура по Фаренгейту: ${tempFahr}`);
+
+
+//Задание 2
+// Необходимо создать переменную name, записать в эту переменную свое имя. Необходимо также
+// создать переменную admin и присвоить этой переменной значение из переменной name.
+// Вывести значение переменной admin в консоль.
+
+const userName = "Виктория";
+let admin;
+admin = userName;
+console.log(admin);
+
+
