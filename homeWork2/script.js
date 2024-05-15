@@ -6,3 +6,14 @@ let num1 = +prompt('Введите 1-е число');
 let num2 = +prompt('Введите 2-е число');
 (num1 <= 1) ? console.log(' Верно. 1-е число равно или меньше 1') : console.log('Число больше 1');
 (num2 >= 3) ? console.log(' Верно. 2-е число равно или больше 3') : console.log('Число меньше 3');
+
+// Задание 2
+// Перепишите код к тернарному оператору
+// let test = true;
+// if (test === true) {
+// console.log('+++');
+// } else {
+// console.log('---');
+// }
+let test = true;
+console.log( test === true ? '+++' : '---');
