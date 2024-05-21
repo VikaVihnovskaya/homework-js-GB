@@ -48,3 +48,23 @@ console.log(getMaxNumber(firstNumber, secondNumber, thirdNumber));
 // вычесть из большего числа меньшее, либо вернуть 0, если числа равны. Функциям всегда передаются корректные числа,
 // проверки на NaN, Infinity делать не нужно.
 
+const sumNumb = (num1, num2) => num1 + num2;
+function diffNumb (num1, num2) {
+  if (num1 > num2){
+    return num1 - num2;
+  }
+  else if (num1 < num2){
+    return num2 - num1;
+}
+  else {
+    return 0;
+  }
+}
+const multNumb = (num1, num2) => num1 * num2;
+const divNumb = (num1, num2) => num1 / num2;
+
+console.log(sumNumb(2,6));
+console.log(diffNumb(2,6));
+console.log(diffNumb(2,2));
+console.log(multNumb(2,6));
+console.log(divNumb(2,6));
