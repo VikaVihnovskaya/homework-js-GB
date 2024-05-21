@@ -7,3 +7,16 @@ console.log(power(2));
 console.log(power(3));
 
 console.log(`Результат: ${power(2) + power(3)}`);
+
+//Задание 2
+// Пользователь вводит с клавиатуры число, если ввёл текст, необходимо вывести что значение задано неверно
+// Создать фукнцию, которая высчитывает 13% от данного числа и выводит в консоль текст "Размер заработной платы
+// за вычетом налогов равен значение"
+
+const salaryAfterTax = (userSalary) => userSalary - userSalary * 0.13;
+let userSalary = +prompt('Введите число');
+
+if (isNaN(userSalary) === false) {
+  console.log(`Размер заработной платы за вычетом налогов равен ${salaryAfterTax(userSalary)}.` );
+} else console.log("Вы ввели неверное значение. Попробуйте еще раз.");
+
