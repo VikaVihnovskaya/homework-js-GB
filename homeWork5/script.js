@@ -48,3 +48,26 @@ console.log(post.author);
 console.log(post.comments[0].rating.dislikes);
 console.log(post.comments[1].userId);
 console.log(post.comments[1].text);
+
+//Задание 3
+// Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.
+
+const products = [
+  {
+    id: 3,
+    price: 200,
+  },
+  {
+    id: 4,
+    price: 900,
+  },
+  {
+    id: 1,
+    price: 1000,
+  },
+];
+
+products.forEach((element) => {
+  element.price *= 0.85;
+});
+console.log(products);
