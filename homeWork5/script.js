@@ -52,25 +52,25 @@ console.log(post.comments[1].text);
 //Задание 3
 // Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.
 
-// const products = [
-//   {
-//     id: 3,
-//     price: 200,
-//   },
-//   {
-//     id: 4,
-//     price: 900,
-//   },
-//   {
-//     id: 1,
-//     price: 1000,
-//   },
-// ];
-//
-// products.forEach((element) => {
-//   element.price *= 0.85;
-// });
-// console.log(products);
+const product = [
+  {
+    id: 3,
+    price: 200,
+  },
+  {
+    id: 4,
+    price: 900,
+  },
+  {
+    id: 1,
+    price: 1000,
+  },
+];
+
+product.forEach((element) => {
+  element.price *= 0.85;
+});
+console.log(product);
 
 //Задание 4
 // 1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна фотография используя метод filter.
@@ -117,3 +117,17 @@ products.sort(function (a, b) {
 console.log(products.sort());
 
 
+//**Задание 5**
+// Дано 2 массива
+//Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго
+// массива — значениями.
+
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+const days = {};
+
+for (let i = 0; i < en.length; i++) {
+  days[en[i]] =ru[i];
+}
+console.log(days);
